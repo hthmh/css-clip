@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+
+		div{
+			width:128px;
+			height:128px;
+			list-style: none;
+			background-color: #888888;
+			position: relative;
+		}
+		span{
+			display: block;
+			position: absolute;
+			width: 128px;
+			height: 128px;
+			background: url(words.png) no-repeat 0 -624px;
+			transition: all .5s ease-in-out 0s;
+		}
+		span.s1{
+			clip: rect(128px, 64px, 128px, 0px);
+		}
+		div:hover span.s1{
+			clip: rect(0px, 64px, 128px, 0px);
+		}
+		span.s2{
+			clip: rect(0px, 128px, 0px, 64px);
+		}
+		div:hover span.s2{
+			clip: rect(0px, 128px, 128px, 64px);
+		}
+	</style>
+</head>
+<body>
+
+		<div>
+			<span class="s1"></span>
+			<span class="s2"></span>
+		</div>
+
+
+
+</body>
+</html>
